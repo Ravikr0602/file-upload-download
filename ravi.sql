@@ -40,7 +40,7 @@ CREATE TABLE `upload_files` (
 --
 
 INSERT INTO `upload_files` (`sno`, `file_name`, `pdf`, `file_uploading_time`) VALUES
-(1, 'Certificate', 'Ravi_Vaccine_certificate.pdf', '2021-08-04 15:37:58'),
+(1, 'Certificate', 'Welcome.pdf', '2021-08-04 15:37:58'),
 (2, 'Assignment', 'Join.pdf', '2021-08-05 04:52:19');
 
 --
