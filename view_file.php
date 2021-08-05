@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View File</title>
-    <link rel="stylesheet" href="view_file.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="/view_file.css?v=<?php echo time(); ?>">
 </head>
 <body>
 
@@ -43,7 +43,7 @@ while($detail = mysqli_fetch_array($result))
       <tr class="table_tr">
           <td class="table_td" data-column="S_No"><?php echo $detail['sno'];?></td>
           <td class="table_td" data-column="File Name"><?php echo $detail['file_name'];?></td>
-          <td class="table_td" data-column="PDF File"><a href="pdf/<?php echo $detail['pdf'];?>"  target="_blank" id="download_link"><?php echo $detail['pdf']; ?></a></td>
+          <td class="table_td" data-column="PDF File"><a href="/pdf/<?php echo $detail['pdf'];?>"  target="_blank" id="download_link"><?php echo $detail['pdf']; ?></a></td>
         </tr>
  <?php
 }
