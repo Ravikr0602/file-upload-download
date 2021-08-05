@@ -1,0 +1,134 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+   background-color: #dde1e7;
+}
+.title_box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4%;
+    font-size: 2rem;
+    border: 1px solid #dde1e7;
+    color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    background-color: #dde1e7 ;
+    box-shadow:  -5px -5px 10px rgba(255,255,255,0.8),
+    5px 5px 15px rgba(0, 0, 0, 0.155), 
+    inset -2px -2px 6px rgba(255,255,255,0.8), 
+    inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+.add_box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30%;
+    outline: none;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 4%;
+    font-size: 2rem;
+    border: 1px solid #dde1e7;
+    color: white;
+    text-decoration: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    background-color: red ;
+    box-shadow:  -5px -5px 10px rgba(255,255,255,0.8),
+    5px 5px 15px rgba(0, 0, 0, 0.155), 
+    inset -2px -2px 6px rgba(255,255,255,0.8), 
+    inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+#add_file
+{
+    text-decoration: red;
+}
+
+  .view_table { 
+    width: 750px; 
+    border-collapse: collapse; 
+    margin:50px auto;
+    }
+  
+  .table_tr:nth-of-type(odd) { 
+    background: #eee; 
+    }
+  
+  .table_th { 
+    background: #3498db; 
+    color: white; 
+    font-weight: bold; 
+    }
+  
+  .table_td, .table_th { 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+    font-size: 18px;
+    }
+  
+#download_link
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+  @media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+  
+    .view_table { 
+        width: 100%; 
+    }
+  
+    .view_table, #table_thead, #table_tbody, .table_th, .table_td, .table_tr { 
+      display: block; 
+    }
+    
+    #table_thead .table_tr { 
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    
+    .table_tr { border: 1px solid #ccc; }
+    
+    .table_td { 
+      border: none;
+      border-bottom: 1px solid #eee; 
+      position: relative;
+      padding-left: 50%; 
+    }
+  
+    .table_td:before { 
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%; 
+      padding-right: 10px; 
+      white-space: nowrap;
+      content: attr(data-column);
+      color: #000;
+      font-weight: bold;
+    }
+  
+  }
+
+
+  
