@@ -17,7 +17,7 @@ require 'conn.php';
 
 if(isset($_POST['upload_file']))
 {
-    $name = $_POST('Name');
+    $filename = $_POST['File_Name'];
     $upload = $_FILES['upload']['name'];
     $upload_type = $_FILES['upload']['type'];
     $upload_size = $_FILES['upload']['size']; 
@@ -26,7 +26,7 @@ if(isset($_POST['upload_file']))
     move_uploaded_file($upload_tem_loc,$upload_store);
 
 
-    $uploads = "INSERT INTO `upload_files` ( `file_name`, `pdf`, `file_uploading_time`) VALUES ('Name','$upload', CURRENT_TIMESTAMP)";
+    $uploads = "INSERT INTO `upload_files` ( `file_name`, `pdf`, `file_uploading_time`) VALUES ('$filename','$upload', CURRENT_TIMESTAMP)";
 
     $result = mysqli_query($conn, $uploads);
 
@@ -52,7 +52,7 @@ if(isset($_POST['upload_file']))
     <div class="upload-inputs">
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>"  method="POST" enctype="multipart/form-data">
         <label>File Name</label>
-        <input type="text" id="upload_input" name="Name">
+        <input type="text" id="upload_input" name="File_Name">
         <label>Upload File</label>
         <input type="file" id="upload_input" name="upload">
       
