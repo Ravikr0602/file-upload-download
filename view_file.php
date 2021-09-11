@@ -24,7 +24,7 @@
         <tr class="table_tr">
           <th class="table_th">Serial No</th>
           <th class="table_th">File Name</th>
-          <th class="table_th">PDF File</th>
+          <th class="table_th">Download</th>
         </tr>
       </thead>
       <tbody id="table_tbody">
@@ -43,7 +43,7 @@ while($detail = mysqli_fetch_array($result))
       <tr class="table_tr">
           <td class="table_td" data-column="S_No"><?php echo $detail['sno'];?></td>
           <td class="table_td" data-column="File Name"><?php echo $detail['file_name'];?></td>
-          <td class="table_td" data-column="PDF File"><a href="/pdf/<?php echo $detail['pdf'];?>"  target="_blank" id="download_link"><?php echo $detail['pdf']; ?></a></td>
+          <td class="table_td" data-column="Download"><a href="/pdf/<?php echo $detail['pdf'];?>"  target="_blank" id="download_link"><?php echo $detail['pdf']; ?></a></td>
         </tr>
  <?php
 }
